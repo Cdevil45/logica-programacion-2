@@ -1,9 +1,9 @@
 function convertirTemperatura() {
-        let celsius = prompt("Por favor, ingrese la temperatura en grados Celsius:");
+        let celsius = prompt("Ingrese la temperatura en Celsius:");
 
     // Validar que el dato ingresado sea un número
     if (isNaN(celsius) || celsius === null || celsius.trim() === "") {
-        alert("Error: Por favor, ingrese un número válido.");
+        alert("Error: Ingrese un numero valido.");
         convertirTemperatura(); 
     } else {
         // Convertir Celsius a número
@@ -13,11 +13,11 @@ function convertirTemperatura() {
         const fahrenheit = (celsius * 9/5) + 32;
         const kelvin = celsius + 273.15;
 
-        // Mostrar los resultados en consola
+        // Mostrar resultados en consola
         console.log(`Temperatura en Fahrenheit: ${fahrenheit.toFixed(2)} °F`);
         console.log(`Temperatura en Kelvin: ${kelvin.toFixed(2)} K`);
 
-        // Mostrar los resultados en el DOM
+        // Mostrar resultados en DOM
         document.body.innerHTML = `
             
             <h1 style="color:red;">Resultados</h1>
