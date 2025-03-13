@@ -23,7 +23,7 @@ function convertirTemperatura() {
             <h1 style="color:red;">Resultados</h1>
             <p>Temperatura en Fahrenheit: ${fahrenheit.toFixed(2)} °F</p>
            <hr>
-            <p style="color:random;">Temperatura en Kelvin: ${kelvin.toFixed(2)} K</p>
+            <p style="color:blue;">Temperatura en Kelvin: ${kelvin.toFixed(2)} K</p>
         `;
     }
 }
